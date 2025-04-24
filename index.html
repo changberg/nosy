@@ -2,23 +2,37 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>stop being nosy</title>
+  <title>Nosy Warning</title>
   <style>
     body {
+      margin: 0;
+      padding: 0;
       background-color: white;
       color: black;
+      font-family: sans-serif;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .top-message {
+      padding: 20px;
+      text-align: center;
+      font-size: 1.5em;
+    }
+
+    .center-message {
+      flex-grow: 1;
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 100vh;
       font-size: 2em;
       text-align: center;
-      margin: 0;
     }
   </style>
 </head>
-  stop being nosy
 <body>
-  go do your work
+  <div class="top-message">stop being nosy</div>
+  <div class="center-message">go do your work</div>
 </body>
 </html>
